@@ -1,110 +1,113 @@
+
+:root {
+    --primary-color: #50928A;
+    --secondary-color: #C1B579;
+}
 body {
      margin: 0;
      padding: 0;
-     font-family: sans-serif;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
      box-sizing: border-box;
      background-color:#f4f4f9 ;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    position:sticky;
+    top:0;
+    background-color: var(--primary-color);
+}
+
+.nav-logo {
+    height: 100px;
+    width: auto;
+    display: block;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    color: #AD906E;
+}
+
 .carousel {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  overflow: hidden;
-  margin: 0 auto;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3) ;
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
-  
-  &:hover
-    .slide:after,
-    .counter,
-    .slide:before {
-      opacity: 1;
-  }
-
 .slide {
-  float: right;
   position: absolute;
-  z-index: 1;
-  width: 600px;
-  height: 400px;
-  background-color: #eee;
-  text-align: center;
-  transition: opacity 0.4s;
-  opacity: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  width: 100%;
+  height: 100%;
 }
-
-  &:before {
-    content: attr(annot);
-    display: block;
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    color: rgba(255,255,255,0.9);
-    font-size: 14px;
-    font-weight: 300; 
-    z-index: 12;
-    opacity: 0;
-    transition: opacity 0.3s;
-    text-shadow: 0 0 1px black ;
-}
-  
-  &:after {
-    content: attr(slide);
-    display: block;
-    position: absolute;
-    bottom: 0;
-    transition: opacity 0.3s;
-    width: 100%;
-    height: 80px;
-    opacity: 0;
-    background-image: linear-gradient(transparent, rgba(0,0,0,0.5));
-    text-align: left;
-    text-indent: 549px;
-    line-height: 101px;
-    font-size: 13px;
-    color: rgba(255,255,255,0.9);
-    text-shadow: 0 0 1px black;
-  }
-
-.counter {
+.slide:before {
+  content: attr(annot);
+  display: block; 
   position: absolute;
   bottom: 20px;
-  right: 1px;
-  height: 20px;
-  width: 60px;
-  z-index: 2;
+  left: 20px;
+  width: fit-content; 
+  max-width: 80%;
+  color: white;
+  z-index: 10; 
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
-  color: #fff;
-  line-height: 21px;
-  font-size: 13px;
-  opacity: 0;
-  transition: opacity 0.3s;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 12px; 
+  padding: 15px 25px;
 }
 
-.banner {
-  top: 0;
-  right: 0;
-  float: right;
-  position: absolute;
-  margin-top:0;
-  z-index: 9;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  cursor: pointer;
-}
-
-input:checked + .slide {
+#slide-1:checked ~ .s1,
+#slide-2:checked ~ .s2,
+#slide-3:checked ~ .s3 {
   opacity: 1;
-  z-index: 9;
+  z-index: 5;
 }
 
-input:nth-child(1):checked ~ .banner {
-  float: left;
-  z-index: 8;
+.controls {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
 }
-.slide {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+
+.controls label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;c
+}
+
+#slide-1:checked ~ .controls label[for="slide-1"],
+#slide-2:checked ~ .controls label[for="slide-2"],
+#slide-3:checked ~ .controls label[for="slide-3"] {
+  background: white;
+}
+
+.services {
+    display: flex;
 }
