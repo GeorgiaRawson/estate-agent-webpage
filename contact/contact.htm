@@ -2,10 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="/assets/stylesheet.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+        <img src="/index/assets/Lee Rawson Logo.png" alt="company logo" class="nav-logo">    
+        <ul class="nav-links">
+           <li><a href= "/index/index.htm">Home</a></li>
+           <li><a href="/buying/buying.htm">Buying</a></li>
+           <li><a href="/selling/selling.htm">Selling</a></li>
+           <li><a href="/lettings/lettings.htm">Lettings</a></li>
+           <li><a href="/about/about.htm">About</a></li>
+           <li><a href="/contact/contact.htm">Contact</a></li>
+        </ul>    
+    </header>
+    <div class="contactme">
+    <h3 class="gethelp">Get help with your property</h3>
+    <form class="form" action="submit.php" method="post">
+        <br>  
+        <input type = "text" placeholder="Your name" required>
+        <br>
+        <input type = "email" placeholder="Email address" required>
+        <br>
+        <input type = "tel" placeholder="Telephone number" required>
+        <br>
+        <textarea id="message" name="message" placeholder="Please leave me a message" rows="5" cols="22"></textarea>
+        <div>
+            <input type="checkbox" id="consent" name="consent" required/>
+            <label for="consent">I consent to Lee Rawson contacting me via email or telephone to discuss my enquiry.</label>
+        </div>
+        <input type="submit" value="Send message" class="submit-button"> </button>
+    </form> 
+</div>
+    <section class="contact">
+        <p class="contact"><a class="contact" href="tel:07865723514" target="_blank"> 07865723514</a></p>
+        <p class="contact"><a class="contact" href="mailto:lee.rawson@exp.uk.com" target="_blank">lee.rawson@exp.uk.com</a></p>
+    </section>
+<footer>
+    <p>© 2026 Lee Rawson. All rights reserved.</p>
+</footer>
 </body>
 </html>
