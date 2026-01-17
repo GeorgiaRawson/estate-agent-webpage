@@ -274,3 +274,40 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+.hi {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    margin: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.hi-content {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    max-width: 600px;
+   
+}
+.headshot{
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    padding: 2%;
+}
+.hi h3 {
+    background-color: #C1B57940;
+    padding: 20px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.hi h3::after {
+    content: "👋";
+}
+
+.hi h3:hover {
+    transform: rotate(5deg);
+}
