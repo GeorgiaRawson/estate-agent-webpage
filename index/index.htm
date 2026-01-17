@@ -9,6 +9,7 @@
 <body>
     <header>
         <nav class="navbar">
+        <img src="/index/assets/Lee Rawson Logo.png" alt="company logo" class="nav-logo">    
         <ul class="nav-links">
            <li><a href= "/index/index.htm">Home</a></li>
            <li><a href="/buying/buying.htm">Buying</a></li>
@@ -16,34 +17,88 @@
            <li><a href="/lettings/lettings.htm">Lettings</a></li>
            <li><a href="/about/about.htm">About</a></li>
            <li><a href="/contact/contact.htm">Contact</a></li>
-        </ul>
-        <img src="/index/assets/Lee Rawson Logo.png" alt="company logo" id="logo">
+        </ul>    
     </header>
-<section class="banner">
-    <div class="banner-items">
-        <div class="slider">
-            <img src="/index/assets/1.png">
-            <img src="/index/assets/2.png">
-            <img src="/index/assets/3.png">
-        </div>
-        <div class="banner-overlay">
-            
-        </div>
-    </div>       
-</section> 
- 
-<article class="buying">
-    <h1>Looking to buy?</h1>
-</article>
-<article class="selling">
-    <h1>Looking to sell?</h1>
-</article>
-<article class="lettings">
-    <h1>Lettings</h1>
-</article>
-<article clas="testimonials">
-    
-</article>
 
+<div class="carousel">
+  <input type="radio" name="carousel-control" id="slide-1" class="banner-trigger" checked>
+  <input type="radio" name="carousel-control" id="slide-2" class="banner-trigger">
+  <input type="radio" name="carousel-control" id="slide-3" class="banner-trigger">
+
+  <div class="slide s1" annot="I believe in transparency over transaction.">
+     <img src="/index/assets/1.png">
+  </div>
+  <div class="slide s2" annot="Attention to detail isn't just a phrase.">
+     <img src="/index/assets/2.png">
+  </div>
+  <div class="slide s3" annot="Your partner, not just your agent.">
+     <img src="/index/assets/3.png">
+  </div>
+
+  <div class="controls">
+    <label for="slide-1"></label>
+    <label for="slide-2"></label>
+    <label for="slide-3"></label>
+  </div>
+</div>
+
+<div class="welcome">
+    <h1>Property Advice, Personally Delivered.</h1>
+    <p>I’m Lee Rawson, and I do estate agency differently. By working with a limited number of clients at any one time, I ensure your home gets the undivided attention and premium marketing it deserves. Professional expertise meets a personal touch—right here in Hampshire.</p>
+   </div> 
+<div class="valuation">
+    <h3 class="form">Book Your Free Valuation Today:</h3>
+    <form class="form" action="submit.php" method="post">
+        <br>  
+        <input type = "text" placeholder="Name:" required>
+        <br>
+        <input type = "email" placeholder="Email:" required>
+        <br>
+        <input type = "tel" placeholder="Phone:" required>
+        <br>
+        <textarea id="address" name="address" placeholder="Address:" rows="5" cols="22"></textarea>
+        <br>
+        <input type="submit" value="Submit" class="submit-button"> </button>
+    </form> 
+</div>
+
+<div class="testimonial-slider">
+  <ul class="slider">
+    <li>
+      <div class="testimonial-slider-content">
+        <q>Lee is highly professional and efficient. He communicates brilliantly and made the move as stress free as he could. He was always on hand to explain things and answer any questions. Lee went above and beyond to get the move done quickly. Would highly recommend.</q>
+        <p class="source">- F Doll <p>
+      </div>
+    </li>
+    <li>
+      <div class="testimonial-slider-content">
+        <q>Lee has been incredible from the very beginning, always communicated through out. Always made sure we were happy and answered all of our questions no matter how silly they may have been. He has helped me and my partner, dog and little girl find our first home together. I can’t express how great his services have been so far.</q>
+        <p class="source">- Sophie</p>
+      </div>
+    </li>
+    <li>
+      <div class="testimonial-slider-content">
+        <q>Lee provides an exceptional service for his clients with his in depth knowledge of the housing market, whether selling, buying or renting, I can't praise him enough for his drive and his enthusiasm. He is one of a kind and would highly recommend.</q>
+        <p class="source">- Nicky Furnell</p>
+      </div>
+    </li>
+    <li>
+      <div class="testimonial-slider-content">
+        <q>Lee is a rarity amongst agents, who has a genuine interest in people and their motivations for their move. He communicates well, whether the news is positive or negative. I have no hesitation in recommending his services for both sales and lettings</q>
+        <p class="source">- Gill Hibbard </p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<section class="contact">
+    <p class="contact"><a class="contact" href="tel:07865723514" target="_blank"> 07865723514</a></p>
+    <p class="contact"><a class="contact" href="mailto:lee.rawson@exp.uk.com" target="_blank">lee.rawson@exp.uk.com</a></p>
+</section>
+<footer>
+<p>
+    © 2026 Lee Rawson. All rights reserved.
+</p>
+</footer>
 </body>
 </html>
