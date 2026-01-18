@@ -4,6 +4,8 @@
     --secondary-color: #C1B579;
     --ht-shadow: 1px 1px 4px rgba(0,0,0,0.8);
     --bg-color: #f4f4f9;
+    --trans-second: #C1B57940;
+    --trans-prim: #bfdedabf;
 }
 body {
      margin: 0;
@@ -12,7 +14,7 @@ body {
      box-sizing: border-box;
      background-color: var(--bg-color)
 }
-
+/* Styling Home page */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -330,6 +332,7 @@ footer {
     padding: 2%;
     margin: 15px; 
 }
+/* Styling contact page */
 
 section .contact {
     margin:0;
@@ -463,4 +466,113 @@ section.contact a:hover {
     .choose-me p {
     max-width: 600px;
     margin: 0 auto;
+}
+
+/* Styling Buying page */
+.buying-hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 50px 20px;
+    min-width: 300px;
+    max-width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: var(--trans-second);
+    text-shadow: var(--ht-shadow);
+    color: white;
+}
+
+.buying-hero button {
+    margin: 10px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+.buying-hero input:focus {
+    transform: scale(1.2);
+}
+.buying-hero button:hover {
+    transform: scale(1.2);
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.guide-promise-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: var(--secondary-color);
+}
+.step-guide, .promise{
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: var(--bg-color);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+.faq-section {
+    padding: 20px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.faq-item {
+    background-color: var(--trans-prim);
+    padding: 25px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+.buying-grid {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+.info-card {
+    max-width: 425px;
+    text-align: center;
+}
+.buying-grid h2 {
+    color: white;
+    text-shadow: var(--ht-shadow);
+    text-align: center;
+
+}
+.buying-grid a {
+    display:inline-block;
+    margin: 20px auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-shadow: var(--ht-shadow);
+    font-size: 18px;
+    background-color: var(--primary-color);
+    border-radius: 9px;
+}
+.buying-grid a:hover {
+    transform: scale(1.2);
+  
 }
