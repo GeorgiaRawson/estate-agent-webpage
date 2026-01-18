@@ -3,13 +3,14 @@
     --primary-color: #50928A;
     --secondary-color: #C1B579;
     --ht-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    --bg-color: #f4f4f9;
 }
 body {
      margin: 0;
      padding: 0;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
      box-sizing: border-box;
-     background-color:#f4f4f9 ;
+     background-color: var(--bg-color)
 }
 
 .navbar {
@@ -275,7 +276,7 @@ footer {
     display: flex;
     justify-content: center;
 }
-
+/* Styling for about page */
 .hi {
     display: flex; 
     flex-direction: row;
@@ -389,4 +390,77 @@ section.contact a:hover {
 .contactme .submit-button:hover {
     background-color: var(--primary-color);
     color: var(--accent-color);
+}
+/* Styling for lettings page */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 20px;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.hero a, .tenant a { 
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: white;
+    text-shadow: var(--ht-shadow);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.hero a:hover {
+    transform: scale(1.2);
+    color: var(--secondary-color);
+}
+.tenant a:hover {
+    transform: scale(1.2);
+    color: var(--secondary-color);
+}   
+.lettings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: var(--secondary-color);
+}
+.tenant, .landlord{
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: var(--bg-color);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+.choose-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 50px 20px;
+    min-width: 300px;
+    max-width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+    .choose-me p {
+    max-width: 600px;
+    margin: 0 auto;
 }
