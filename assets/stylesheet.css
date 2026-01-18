@@ -17,6 +17,9 @@ body {
 /* Styling Home page */
 .navbar {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    min-width: 400px;
     justify-content: space-between;
     align-items: center;
     padding: 5px 5%;
@@ -32,6 +35,9 @@ body {
 }
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    min-width: 400px;
     list-style: none;
 }
 .nav-links li {
@@ -51,7 +57,7 @@ body {
 
 .carousel {
     position: relative;
-    width: 1000px;
+    width: 79%;
     height: 400px;
     margin: 25px auto;
     border-radius: 15px;
