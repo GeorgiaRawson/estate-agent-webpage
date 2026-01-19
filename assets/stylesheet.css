@@ -45,7 +45,7 @@ body {
 }
 .nav-links a {
     color: white;
-    text-shadow: var(--ht-shadow)
+    text-shadow: var(--ht-shadow);
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
